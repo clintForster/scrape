@@ -5,7 +5,7 @@ $.getJSON("/articles", function(data) {
   console.log(data);
   for (var i = 0; i < data.length; i++) {
     // Display the apropos information on the page
-    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "<br />" + "<img src = 'https://www.purina.com" + data[i].image + "' width = '200px' height='200px' /></p>");
+    $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].link + "<br />" + "<img src = 'https://www.purina.com" + data[i].image + "' width = '200px' height='200px'/></p>");
   }
 });
 
